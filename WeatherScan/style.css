@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --transp-white-1: rgba(255, 255, 255, 0.25);
+    --transp-white-2: rgba(255, 255, 255, 0.1);
+    --blue-1: #62b8f5;
+    --blue-2: #4475ef;
+    --shadow: rgba(3, 46, 87, 0.2);
+}
+
+body 
+{
+    height: 86vh;
+    background: linear-gradient(0deg, #00feba, #5b548a);
+}
+
+.weatherCard
+{
+    width: 80%;
+    max-width: 400px;
+    background: linear-gradient(180deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 25px;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.searchBar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar input
+{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 55px;
+    border-radius: 32px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1.2rem;
+}
+
+.searchBar button
+{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.searchBar button img
+{
+    width: 24px;
+}
+
+.reportIcon
+{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weatherReport h1
+{
+    font: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.weatherReport h2
+{
+    font: 50px;
+    font-weight: 400;
+}
+
+.nuances
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px; 
+    margin-top: 50px;
+}
+
+.param
+{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.param img
+{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind
+{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weatherReport
+{
+    display: none;
+}
+
+.error
+{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1rem;
+    display: none;
+}
